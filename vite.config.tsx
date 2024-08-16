@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default {
+export default defineConfig({
+  plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['socket.io-client'],
-    },
-  },
-};
+      external: ['socket.io-client']
+    }
+  }
+})
