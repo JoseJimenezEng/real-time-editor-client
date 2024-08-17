@@ -135,7 +135,7 @@ function App() {
                 <input
                   type="color"
                   className="form-control"
-                                    value={fontColor}
+                  value={fontColor}
                   onChange={handleFontColorChange}
                 />
               </div>
