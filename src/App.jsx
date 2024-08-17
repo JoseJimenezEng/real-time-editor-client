@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 const socket = io(process.env.REACT_APP_SERVER_URL);
-console.log(process.env.REACT_APP_SERVER_URL)
+
 function App() {
   const [text, setText] = useState('');
   const [username, setUsername] = useState('');
