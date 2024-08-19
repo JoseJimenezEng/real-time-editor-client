@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
-const socket = io("https://real-time-editor-server.onrender.com");
+const socket = io(import.meta.env.REACT_APP_SERVER_URL);
 
 function App() {
   const [text, setText] = useState('');
