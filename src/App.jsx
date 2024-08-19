@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 
 const socket = io("https://real-time-editor-server.onrender.com");
 
@@ -116,7 +117,7 @@ function App() {
             </ul>
           </div>
           <div className="p-3" style={{ flex: 1 }}>
-            <div className="formControl d-flex justify-content-around">
+            <div className="formControl d-flex justify-content-around content">
               <div className="mb-3">
                 <label className="form-label">Font Size</label>
                 <select

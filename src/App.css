@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .mb-3{
+        max-width: 100px;
+    }
+  }
