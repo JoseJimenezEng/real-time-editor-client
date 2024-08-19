@@ -1,10 +1,14 @@
 @media (max-width: 900px) {
-    .content{
+    .controlContent{
         display: flex;
         flex-direction: column;
     }
 
-    .content .mb-3{
+    .controlContent .mb-3{
         max-width: 100px;
+    }
+    
+    .sideBar{
+        max-width: 20%;
     }
   }

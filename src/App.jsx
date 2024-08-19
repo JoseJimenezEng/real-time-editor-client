@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 const socket = io(import.meta.env.VITE_APP_SERVER_URL);
-console.log(import.meta.env.VITE_APP_SERVER_URL)
+
 
 function App() {
   const [text, setText] = useState('');
@@ -109,7 +109,7 @@ function App() {
     <div className="d-flex">
       {isLoggedIn ? (
         <>
-          <div className="bg-light p-3" style={{ width: '300px', height: '100vh' }}>
+          <div className="bg-light p-3 sideBar" style={{ width: '300px', height: '100vh' }}>
             <h4>Users in Room</h4>
             <ul>
               {users.map((user) => (
@@ -118,7 +118,7 @@ function App() {
             </ul>
           </div>
           <div className="p-3" style={{ flex: 1 }}>
-            <div className="formControl d-flex justify-content-around content">
+            <div className="formControl d-flex justify-content-around controlContent">
               <div className="mb-3">
                 <label className="form-label">Font Size</label>
                 <select
