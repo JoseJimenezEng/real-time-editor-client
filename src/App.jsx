@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 const socket = io(import.meta.env.REACT_APP_SERVER_URL);
+console.log(import.meta.env.REACT_APP_SERVER_URL)
 
 function App() {
   const [text, setText] = useState('');
